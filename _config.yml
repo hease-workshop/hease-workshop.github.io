@@ -1,8 +1,8 @@
 title: HEASE 2027
 description: >-
   1st International Workshop on Harness Evaluation and Assessment for Software Engineering.
-url: https://lucianomarchezan.github.io
-baseurl: /hease-workshop.github.io
+url: https://hease-workshop.github.io
+baseurl: ""
 lang: en
 conference_url: https://conf.researchr.org/home/ease-2027
 
