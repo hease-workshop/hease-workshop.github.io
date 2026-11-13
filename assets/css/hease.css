@@ -1,0 +1,136 @@
+body {
+  background: #fff;
+  color: #0b3c49;
+  font: 1rem/1.65 Inter, system-ui, sans-serif;
+}
+
+.wrapper {
+  max-width: 58rem;
+}
+
+a, a:visited {
+  color: #146477;
+}
+
+a:focus-visible {
+  outline: 3px solid #e8503a;
+  outline-offset: 3px;
+}
+
+.site-header {
+  border-top: 4px solid #0b3c49;
+}
+
+.header-inner, .footer-inner, .workshop-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+
+.header-inner, .footer-inner {
+  justify-content: space-between;
+}
+
+.header-inner {
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+}
+
+.brand img {
+  width: auto;
+  height: 42px;
+  display: block;
+}
+
+.workshop-nav a {
+  color: inherit;
+  padding: 0.25rem 0;
+  border-bottom: 2px solid transparent;
+}
+
+.workshop-nav a[aria-current="page"] {
+  border-color: #e8503a;
+  font-weight: 650;
+}
+
+.workshop-hero {
+  overflow: hidden;
+  border-radius: 0.8rem;
+  background: #0b3c49;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.hero-content {
+  padding: clamp(1.25rem, 5vw, 3rem);
+}
+
+.hero-heading {
+  margin: 0;
+}
+
+.hero-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.workshop-hero a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.workshop-hero .hero-button {
+  display: inline-block;
+  background: #fff;
+  color: #0b3c49;
+  padding: 0.55rem 1rem;
+  border-radius: 0.3rem;
+  font-weight: 650;
+}
+
+.workshop-dates {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.65rem 1rem;
+  max-width: 35rem;
+}
+
+.workshop-dates dt {
+  font-weight: 650;
+}
+
+.workshop-dates dd {
+  margin: 0;
+}
+
+.organizer-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+  gap: 1rem;
+  margin: 0 0 2rem;
+  list-style: none;
+}
+
+.organizer-list li {
+  padding: 1.25rem;
+  border: 1px solid #d7e5e8;
+  border-radius: 0.6rem;
+  text-align: center;
+}
+
+.organizer-list img {
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: 50%;
+  margin-bottom: 0.8rem;
+}
+
+.organizer-list h3, .organizer-list p {
+  margin-bottom: 0.4rem;
+}
+
+.post table td, .post table th {
+  padding: 0.55rem;
+}

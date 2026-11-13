@@ -1,0 +1,12 @@
+<header class="site-header">
+  <div class="wrapper header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/hease-logo-kit/svg/hease-logo-compact.svg' | relative_url }}" alt="HEASE 2027 home">
+    </a>
+    <nav class="workshop-nav" aria-label="Main navigation">
+      {% for link in site.navigation %}
+        <a href="{{ link.url | relative_url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>

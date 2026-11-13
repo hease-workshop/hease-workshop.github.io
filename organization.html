@@ -1,0 +1,20 @@
+---
+layout: page
+title: Organization
+permalink: /organization
+---
+
+<h1>Organization</h1>
+<h2>Organizers</h2>
+<ul class="organizer-list">
+  {% for organizer in site.data.organizers %}
+    <li>
+      {% assign portrait = '/assets/people/' | append: organizer.image %}
+      <img src="{{ portrait | relative_url }}" alt="" width="144" height="144">
+      <h3><a href="{{ organizer.website | escape }}">{{ organizer.name | escape }}</a></h3>
+      <p>{{ organizer.affiliation | escape }}</p>
+    </li>
+  {% endfor %}
+</ul>
+<h2>Program Committee</h2>
+<p>TBA</p>
